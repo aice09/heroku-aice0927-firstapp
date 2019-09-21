@@ -29,6 +29,7 @@ Hello World in Heroku with PHP, PosgreSQL, and Github
             <td>'. $row[0] .'</td>
             <td>'. $row[1] .'</td>
             <td>'. $row[2] .'</td>
+            <td>'. $row[3] .'</td>
             <td>'. $row[4] .'</td>
             <td>'. sha1(md5($row[5])) .'</td>
          </tr>';
