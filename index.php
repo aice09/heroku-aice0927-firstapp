@@ -1,6 +1,6 @@
 Hello World in Heroku with PHP, PosgreSQL, and Github
 <?php
-  include 'a.php';
+  include 'config/database.php';
    
 
    $sql ="SELECT * from employee";
