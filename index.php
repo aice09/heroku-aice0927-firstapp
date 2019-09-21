@@ -11,9 +11,11 @@ Hello World in Heroku with PHP, PosgreSQL, and Github
       <thead>
          <tr>
             <th>ID</th>
-            <th>NAME</th>
-            <th>ADDRESS</th>
-            <th>SALARY</th>
+            <th>EMPLOYEE ID</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>EMAIL</th>
+            <th>PASSWORD</th>
          </tr>
       </thead>
       <tbody>';
@@ -28,6 +30,7 @@ Hello World in Heroku with PHP, PosgreSQL, and Github
             <td>'. $row[1] .'</td>
             <td>'. $row[2] .'</td>
             <td>'. $row[4] .'</td>
+            <td>'. sha1(md5($row[5])) .'</td>
          </tr>';
      
       
